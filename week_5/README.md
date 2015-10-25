@@ -1,7 +1,6 @@
 # Angular Basics
-=================
-Topics Covered This Week:
 
+Topics Covered This Week:
   * Client Side Build Process
   * Including Angular In A Build
   * Angular Components

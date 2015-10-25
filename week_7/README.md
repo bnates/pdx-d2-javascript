@@ -1,7 +1,6 @@
 # Ionic
-=================
-Topics Covered This Week:
 
+Topics Covered This Week:
   * Android SDK
   * Building Ionic Apps
   * Ionic App Structure

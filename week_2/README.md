@@ -1,7 +1,6 @@
 # Vanilla Node Servers
-=======================
-Topics Covered This Week:
 
+Topics Covered This Week:
   * Tcp Servers
   * HTTP Servers
   * Working with Pipes

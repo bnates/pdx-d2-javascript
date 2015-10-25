@@ -1,7 +1,6 @@
 # Advanced Angular
-=================
-Topics Covered This Week:
 
+Topics Covered This Week:
   * Angular Services
   * Angular Directives
   * Angular Routing

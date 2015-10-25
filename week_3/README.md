@@ -1,7 +1,6 @@
 # Express and Mongodb
-=====================
-Topics Covered This Week:
 
+Topics Covered This Week:
   * Express
   * Express Middleware
   * MongoDB
