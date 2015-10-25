@@ -10,4 +10,4 @@ This is the main repository for the **PDX-D2 Javascript Development Accelerator*
 *To clone this repository through https, run the following command:*
 
 ```
-$ https://github.com/bnates/pdx-d2-javascript.git
+$ git clone https://github.com/bnates/pdx-d2-javascript.git
