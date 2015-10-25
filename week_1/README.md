@@ -1,5 +1,4 @@
 # Node Basics and Tooling
-========================
 
 Topics Covered This Week
   * Modular Patterns
