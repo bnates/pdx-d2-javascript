@@ -1,6 +1,6 @@
 # PDX-D2 Javsacript
 
-This is the main repository for the PDX-D2 Javascript Development Accelerator.
+This is the main repository for the **PDX-D2 Javascript Development Accelerator**.
 
 Each week contains a readme file that outlines the primary topics for that week.
 
