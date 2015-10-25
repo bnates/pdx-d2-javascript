@@ -1,6 +1,5 @@
 # Ionic
 =================
-
 Topics Covered This Week:
 
   * Android SDK

@@ -1,6 +1,5 @@
 # Express and Mongodb
 =====================
-
 Topics Covered This Week:
 
   * Express

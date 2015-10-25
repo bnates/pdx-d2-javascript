@@ -1,6 +1,5 @@
 # Angular Basics
 =================
-
 Topics Covered This Week:
 
   * Client Side Build Process

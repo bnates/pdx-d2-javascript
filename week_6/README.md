@@ -1,6 +1,5 @@
 # Advanced Angular
 =================
-
 Topics Covered This Week:
 
   * Angular Services

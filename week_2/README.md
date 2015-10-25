@@ -1,6 +1,5 @@
 # Vanilla Node Servers
 =======================
-
 Topics Covered This Week:
 
   * Tcp Servers
