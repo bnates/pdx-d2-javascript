@@ -1,9 +1,12 @@
-Express and Mongodb
+# Express and Mongodb
 =====================
-Topics covered this week:
-  * express
-  * express middleware
-  * mongodb
-  * testing REST apis
-  * basic http authentication
-  * token based authentication
+
+Topics Covered This Week:
+
+  * Express
+  * Express Middleware
+  * MongoDB
+  * Testing REST API's
+  * Basic HTTP Authentication
+  * Token Based Authentication
+  * Styling Form Elements

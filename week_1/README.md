@@ -1,12 +1,15 @@
-Node Basics and Tooling
+# Node Basics and Tooling
 ========================
-Topics covered this week
-  * modular patterns
-  * basic testing
-  * gulp
+
+Topics Covered This Week
+
+  * Modular Patterns
+  * Basic Testing
+  * Gulp
   * npm
   * package.json
-  * buffers
-  * event emitters
-  * streams
+  * Buffers
+  * Event Emitters
+  * Streams
   * fs
+  * Getting To Know HTML

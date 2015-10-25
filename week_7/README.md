@@ -1,12 +1,14 @@
-Ionic
+# Ionic
 =================
-Topics covered this week:
-  * android sdk
-  * building ionic apps
-  * ionic app structure
-  * integrating webpack with ionic
-  * cordova hooks
-  * mounting controllers
-  * ionic components/directives
-  * CORS requests
-  * push notifications
+
+Topics Covered This Week:
+
+  * Android SDK
+  * Building Ionic Apps
+  * Ionic App Structure
+  * Integrating Webpack with ionic
+  * Cordova Hooks
+  * Mounting Controllers
+  * Ionic Components/Directives
+  * CORS Requests
+  * Push Notifications

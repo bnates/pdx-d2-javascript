@@ -1,11 +1,13 @@
-Angular Basics
+# Angular Basics
 =================
-Topics covered this week:
-  * Client side build process
-  * including Angular in a build
-  * Angular components
-  * Angular controllers
-  * $scope and you
-  * Angular CRUD backed by a REST API
+
+Topics Covered This Week:
+
+  * Client Side Build Process
+  * Including Angular In A Build
+  * Angular Components
+  * Angular Controllers
+  * $scope and You
+  * Angular CRUD Backed By a REST API
   * $http
-  * unit testing Angular
+  * Unit Testing Angular

@@ -1,9 +1,11 @@
-Advanced Angular
+# Advanced Angular
 =================
-Topics covered this week:
-  * angular services
-  * angular directives
-  * angular routing
-  * angular root level config
-  * angular providers
-  * cookies and angular
+
+Topics Covered This Week:
+
+  * Angular Services
+  * Angular Directives
+  * Angular Routing
+  * Angular Root Level Config
+  * Angular Providers
+  * Cookies and Angular

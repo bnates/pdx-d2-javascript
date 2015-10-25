@@ -1,8 +1,11 @@
-Vanilla Node Servers
+# Vanilla Node Servers
 =======================
+
 Topics Covered This Week:
-  * tcp servers
-  * http servers
-  * working with pipes
-  * simple routing
-  * sending html files
+
+  * Tcp Servers
+  * HTTP Servers
+  * Working with Pipes
+  * Simple Routing
+  * Sending HTML Files
+  * Getting To Know CSS
