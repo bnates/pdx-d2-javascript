@@ -7,3 +7,4 @@ Topics Covered This Week:
   * Angular Root Level Config
   * Angular Providers
   * Cookies and Angular
+  * Semantic and Modular CSS

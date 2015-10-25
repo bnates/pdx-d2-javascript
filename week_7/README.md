@@ -10,3 +10,4 @@ Topics Covered This Week:
   * Ionic Components/Directives
   * CORS Requests
   * Push Notifications
+  * Layouts and SCSS

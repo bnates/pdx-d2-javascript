@@ -8,4 +8,5 @@ Topics Covered This Week:
   * $scope and You
   * Angular CRUD Backed By a REST API
   * $http
-  * Unit Testing Angular
+  * Unit Testing
+  * Advanced Positioning and Floats
