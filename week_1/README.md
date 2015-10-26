@@ -11,3 +11,4 @@ Topics Covered This Week
   * Streams
   * fs
   * Getting To Know HTML
+  * Day 1 Video - https://www.youtube.com/watch?v=mJMfH0wkYKw&index=1&list=PLM1HIxGbu_ixotoZuXQKJJB_P1_zvEit-
