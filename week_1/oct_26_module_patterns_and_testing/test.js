@@ -16,5 +16,4 @@ describe('access string', function() {
         expect(greet.sayName('Brian')).to.eql('hello, I am Brian');
         done();
     });
-
 });
