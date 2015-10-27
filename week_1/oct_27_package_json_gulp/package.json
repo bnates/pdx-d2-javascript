@@ -1,0 +1,15 @@
+{
+  "name": "my_app",
+  "version": "1.0.0",
+  "description": "simple npm test",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Brian Nations <varbrian@gmail.com> (http://google.com/)",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "3.9.0",
+    "gulp-jshint": "1.11.2"
+  }
+}
