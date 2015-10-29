@@ -1,0 +1,6 @@
+{
+	"indent": 1,
+	"esnext": true,
+	"node": true,
+	"mocha": true
+}
