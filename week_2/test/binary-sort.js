@@ -106,3 +106,23 @@ describe( 'binary sort tree', () => {
 	})
 
 });
+
+// describe( 'binary sort tree', () => {
+
+// 	var fileData;
+
+// 	before( function(done){
+// 		fs.readFile( 'file', function(err, data){
+// 			fileData = data;
+// 			done();
+// 		});
+// 	});
+
+// 	it( 'has data', function(){
+// 		assert.ok(fileData);
+// 	});
+
+// });
+
+
+
