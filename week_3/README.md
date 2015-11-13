@@ -8,3 +8,4 @@ Topics Covered This Week:
   * Basic HTTP Authentication
   * Token Based Authentication
   * Styling Form Elements
+  * All videos can be found @ https://www.youtube.com/playlist?list=PLM1HIxGbu_ixotoZuXQKJJB_P1_zvEit-
