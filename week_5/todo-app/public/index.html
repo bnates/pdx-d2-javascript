@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Todo Application</title>
+    <link rel="stylesheet" type="text/css" href="/assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="/assets/img/logo.png" alt="logo">
+        </div>
+    </header>
+
+    <main>
+        <section role="welcome">
+            <h2>Welcome Msg Placeholder</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </section>
+
+        <section role="add-task">
+            <form>
+                <input type="text" placeholder="Enter Task" value="">
+                <button type="submit"><span>Add Task</span></button>
+            </form>
+        </section>
+
+        <section role="current-tasks">
+            <h3>Current Tasks</h3>
+            <p class="current-task">A test placeholder task</p>
+            <span class="remove">X</span>
+            <button><span>Complete Task</span></button>
+        </section>
+
+        <section role="completed-tasks">
+            <h3>Completed Tasks</h3>
+            <p class="completed-task">A test placeholder task</p>
+            <button><span>Remove All Completed Tasks</span></button>
+        </section>
+    </main>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="/assets/js/bundle.js"></script>
+</body>
+</html>
