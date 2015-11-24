@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="Todo">
 <head>
     <title>Todo Application</title>
     <link rel="stylesheet" type="text/css" href="/assets/css/reset.css">
@@ -13,7 +13,12 @@
         </div>
     </header>
 
-    <main>
+    <main ng-controller="basicController">
+
+        <ul>
+            <li ng-repeat="item in items">{{ item.name }}</li>
+        </li>
+
         <section role="welcome">
             <h2>Welcome Msg Placeholder</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -26,7 +31,7 @@
 
         <section role="add-task">
             <form>
-                <input type="text" placeholder="Enter Task" value="">
+                <input type="text" placeholder="Enter Task" ng-model="taskName" value="">
                 <button type="submit"><span>Add Task</span></button>
             </form>
         </section>
@@ -36,7 +41,8 @@
             <ul class="tasks">
                 <li>
                     <span class="item">Some task item</span>
-                    <span class="remove">X</span>
+                    <span cla
+                    ss="remove">X</span>
                     <button><span>Complete Task</span></button>
                 </li>
             </ul>
@@ -55,6 +61,6 @@
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script type="text/javascript" src="/assets/js/bundle.js"></script>
+    <script type="text/javascript" src="/controllers/controller.js"></script>
 </body>
 </html>
