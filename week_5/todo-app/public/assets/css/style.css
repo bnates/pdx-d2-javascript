@@ -4,10 +4,23 @@ body {
     font-family: 'Raleway';
 }
 
+section {
+    margin: 2.5% 0;
+    float: left;
+    width: 100%;
+}
+
 h2 {
     text-align: center;
     font-size: 32px;
     margin-bottom: 2.5%;
+}
+
+h3 {
+    font-size: 24px;
+    text-transform: uppercase;
+    border-bottom: solid 1px #444;
+    padding-bottom: 10px;
 }
 
 p {
@@ -60,3 +73,63 @@ main {
     margin: 2.5% auto;
 }
 
+.tasks li {
+    padding: 12px;
+}
+
+.tasks li .item {
+    display: block;
+    float: left;
+    width: 76.5%;
+    margin-top: 15px;
+}
+
+.remove {
+    display: block;
+    float: left;
+    width: 23px;
+    text-align: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background: #f00;
+    color: #fff;
+    border-radius: 3px;
+    margin-top: 12px;
+}
+
+/* responsive styles */
+
+@media (max-width: 960px) {
+
+    header div {
+        margin: 0 2.5%;
+    }
+
+    main {
+        margin: 0 2.5%;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .tasks li {
+        padding: 0px;
+    }
+
+    .tasks li .item {
+        width: 100%;
+        margin-bottom: 2.5%;
+    }
+
+    section button {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .remove {
+        display: none; /* DEV ONLY */
+     }
+
+}
