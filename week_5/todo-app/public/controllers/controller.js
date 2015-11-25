@@ -1,14 +1,14 @@
 var Todo = angular.module('Todo', []);
 
-Todo.controller('basicController', ['$scope', basicController]);
+Todo.controller('TaskCtrl', ['$scope', TaskCtrl]);
 
-function basicController($scope) {
-    $scope.items = [
+function TaskCtrl($scope) {
+    $scope.tasks = [
         {
-            name: 'item-1'
+            description: 'some task description - task 1'
         },
         {
-            name: 'item-2'
+            description: 'some task description - task 2'
         }
     ]
 }

@@ -13,12 +13,7 @@
         </div>
     </header>
 
-    <main ng-controller="basicController">
-
-        <ul>
-            <li ng-repeat="item in items">{{ item.name }}</li>
-        </li>
-
+    <main ng-controller="TaskCtrl">
         <section role="welcome">
             <h2>Welcome Msg Placeholder</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -39,10 +34,9 @@
         <section role="current-tasks">
             <h3>Current Tasks</h3>
             <ul class="tasks">
-                <li>
-                    <span class="item">Some task item</span>
-                    <span cla
-                    ss="remove">X</span>
+                <li ng-repeat="task in tasks">
+                    <span class="item">{{ task.description }}</span>
+                    <span class="remove">X</span>
                     <button><span>Complete Task</span></button>
                 </li>
             </ul>
