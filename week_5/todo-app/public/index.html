@@ -31,10 +31,10 @@
             </form>
         </section>
 
-        <section role="current-tasks">
+        <section class="current-tasks">
             <h3>Current Tasks</h3>
             <ul class="tasks">
-                <li ng-repeat="task in tasks">
+                <li data-idx="{{ $index }}" ng-repeat="task in tasks">
                     <span class="item">{{ task.description }}</span>
                     <span class="remove">X</span>
                     <button><span>Complete Task</span></button>
@@ -42,19 +42,20 @@
             </ul>
         </section>
 
-        <section role="completed-tasks">
+        <section class="completed-tasks">
             <h3>Completed Tasks</h3>
             <ul class="tasks">
                 <li>
                     <span class="item">Some task item</span>
                 </li>
             </ul>
-            <button><span>Remove All Completed Tasks</span></button>
+            <button class="complete-all"><span>Remove All Completed Tasks</span></button>
         </section>
     </main>
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script type="text/javascript" src="/controllers/controller.js"></script>
+    <script type="text/javascript" src="/assets/js/completed-tasks.js"></script>
 </body>
 </html>
