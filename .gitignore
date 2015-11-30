@@ -2,3 +2,4 @@
 **/*.sw?
 **/*bundle.js
 **/db/
+.DS_Store
