@@ -31,10 +31,23 @@
             </form>
         </section>
 
+
         <section class="current-tasks">
-            <h3>Current Tasks</h3>
+            <h3>Current Tasks </h3>
+            <br>
+            <label>Task: <input ng-model="search.description"></label> <br>
+            <div>
+                <!-- haha Brian :p -->
+                Status:
+                <br>
+                <label>all:<input type='radio' ng-model="search.done" ng-value='undefined'></label>
+                <label>done: <input type='radio' ng-model="search.done" value='true'></label>
+                <label>remaining: <input type='radio' ng-model="search.done" value='false'></label>
+            <br>
+            <br>
             <ul class="tasks">
-                <li data-idx="{{ $index }}" ng-repeat="task in tasks">
+                <li data-idx="{{ $index }}"
+                    ng-repeat="task in tasks | filter:search">
                     <span class="item">{{ task.description }}</span>
                     <span class="created">{{ task.created | moment }}</span>
                     <span class="remove">X</span>
@@ -46,8 +59,9 @@
         <section class="completed-tasks">
             <h3>Completed Tasks</h3>
             <ul class="tasks">
-                <li>
-                    <span class="item">Some task item</span>
+                <li ng-repeat="task in tasks | filter: { done: true }">
+                    <span class="item">{{ task.description }}</span>
+                    <span class="remove">X</span>
                 </li>
             </ul>
             <button class="complete-all"><span>Remove All Completed Tasks</span></button>
