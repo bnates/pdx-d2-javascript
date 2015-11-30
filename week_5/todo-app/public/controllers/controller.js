@@ -1,4 +1,6 @@
-var Todo = angular.module('Todo', []);
+var Todo = angular.module('Todo', [
+	'todo.moment-filter']
+);
 
 Todo.controller('TaskCtrl', ['$scope', TaskCtrl]);
 

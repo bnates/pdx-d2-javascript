@@ -36,6 +36,7 @@
             <ul class="tasks">
                 <li data-idx="{{ $index }}" ng-repeat="task in tasks">
                     <span class="item">{{ task.description }}</span>
+                    <span class="created">{{ task.created | moment }}</span>
                     <span class="remove">X</span>
                     <button><span>Complete Task</span></button>
                 </li>
@@ -53,9 +54,13 @@
         </section>
     </main>
 
+
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js'></script>
     <script type="text/javascript" src="/controllers/controller.js"></script>
+    <script type="text/javascript" src="/filters/moment.js"></script>
     <script type="text/javascript" src="/assets/js/completed-tasks.js"></script>
+
 </body>
 </html>
