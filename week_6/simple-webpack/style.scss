@@ -1,0 +1,23 @@
+@import '_colors';
+
+$othercolor: steelblue;
+$basesize: 30px;
+
+h1 {
+    color: $othercolor;
+    cursor: pointer;
+
+    span {
+        color: $cooler;
+        font-size: $basesize - 10pt;
+    }
+
+    &.sansyier {
+        font-family: sans-serif;
+    }
+
+}
+
+:local(.local) {
+    color: yellow;
+};
