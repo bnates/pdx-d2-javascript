@@ -1,6 +1,4 @@
-var Todo = angular.module('Todo', [
-	'todo.moment-filter']
-);
+var angular = require('angular');
 
 var local = [ '$q', function local($q) {
     return {
@@ -34,8 +32,11 @@ var server = [ '$http', function($http) {
     };
 }];
 
-Todo.factory( 'tasksService', server);
 
+
+var Todo = angular.module('todo.list-controller', []);
+
+Todo.factory( 'tasksService', local);
 Todo.controller('TaskCtrl', ['$scope', 'tasksService', TaskCtrl]);
 // Todo.controller('TaskCtrl', ['$scope', '$http', TaskCtrl]);
 
@@ -48,5 +49,5 @@ function TaskCtrl($scope, tasksService) {
     $scope.showSearch = function(){
     	console.log($scope);
     	$scope.search.$ = 'haha';
-    }
+    };
 }

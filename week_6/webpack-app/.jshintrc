@@ -1,0 +1,18 @@
+{
+  "esnext": true,
+  "strict": false,
+  "globalstrict": true,
+  "globals": {
+    "angular": false,
+    "describe": false,
+    "document": false,
+    "__dirname": false,
+    "require": false,
+    "it": false,
+    "expect": false,
+    "beforeEach": false,
+    "afterEach": false,
+    "module": false,
+    "inject": false
+  }
+}
