@@ -1,0 +1,27 @@
+header {
+    background: $black;
+    position: fixed;
+    width: 100%;
+
+    > .inner {
+        max-width: $bp-large;
+        margin: 0 auto;
+
+        img {
+            margin: 15px 0;
+            width: 85px;
+        }
+    }
+}
+
+main {
+    max-width: $bp-large;
+    margin: 0 auto;
+    padding-top: 115px;
+
+    section {
+        margin: $gutter 0;
+        float: left;
+        width: 100%;
+    }
+}

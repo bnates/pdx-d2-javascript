@@ -1,0 +1,39 @@
+section[role="add-task"] {
+    margin-bottom: 0px;
+}
+
+.tasks li {
+    padding: 12px;
+
+    .item {
+        display: block;
+        float: left;
+        width: 76.5%;
+        margin-top: 15px;
+    }
+}
+
+.completed-tasks li span.item {
+    display: block;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.remove {
+    display: block;
+    float: left;
+    width: 23px;
+    text-align: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background: $btn-secondary;
+    color: $white;
+    border-radius: 3px;
+    margin-top: 12px;
+}
+
+.complete-all {
+    margin-top: 25px;
+    width: 50%;
+    float: right;
+}

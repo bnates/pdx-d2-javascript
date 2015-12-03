@@ -1,0 +1,32 @@
+@media (max-width: $bp-large) {
+    header div {
+        margin: 0 2.5%;
+    }
+
+    main {
+        margin: 0 2.5%;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .tasks li {
+        padding: 0px;
+
+        .item {
+            width: 100%;
+            margin-bottom: 2.5%;
+        }
+    }
+
+    section button {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .remove {
+        display: none; /* dev only */
+     }
+}

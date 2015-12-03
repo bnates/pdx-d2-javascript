@@ -1,0 +1,37 @@
+body {
+    font-family: $f-stack-std;
+    background: $bodyBg;
+
+    h2 {
+        text-align: center;
+        font-size: 32px;
+        margin-bottom: $gutter;
+    }
+
+    h3 {
+        font-size: 24px;
+        text-transform: uppercase;
+        border-bottom: solid 1px $black;
+        padding-bottom: 10px;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 28px;
+        text-align: center;
+        margin-bottom: $gutter;
+        color: $black;
+        font-style: italic;
+
+        &.msg {
+            background: $success-msg;
+            color: $white;
+            border-radius: 3px;
+            padding: 15px;
+            line-height: 28px;
+            margin-bottom: 0px;
+            font-size: 15px;
+            font-family: $f-stack-secondary;
+        }
+    }
+}
