@@ -1,4 +1,18 @@
+/* this file should be refactored again into smaller breakpoints and sections */
+
 @media (max-width: $bp-large) {
+    h3 {
+        margin-top: 30px;
+    }
+
+    header {
+        .inner {
+            img {
+                margin: 15px 2.5%;
+            }
+        }
+    }
+
     header div {
         margin: 0 2.5%;
     }
@@ -28,5 +42,19 @@
 
     .remove {
         display: none; /* dev only */
+     }
+
+     .info-bar {
+        margin: 0;
+     }
+
+     .status-bar {
+        .search-box {
+            width: 36%;
+        }
+     }
+
+     .complete-all {
+        width: 100%;
      }
 }

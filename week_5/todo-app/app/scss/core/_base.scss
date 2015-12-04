@@ -1,6 +1,6 @@
 body {
     font-family: $f-stack-std;
-    background: $bodyBg;
+    background: $body-bg;
 
     h2 {
         text-align: center;
@@ -11,8 +11,8 @@ body {
     h3 {
         font-size: 24px;
         text-transform: uppercase;
-        border-bottom: solid 1px $black;
         padding-bottom: 10px;
+        border-bottom: solid 1px #444;
     }
 
     p {
@@ -24,7 +24,7 @@ body {
         font-style: italic;
 
         &.msg {
-            background: $success-msg;
+            background: $std-msg;
             color: $white;
             border-radius: 3px;
             padding: 15px;
@@ -32,6 +32,12 @@ body {
             margin-bottom: 0px;
             font-size: 15px;
             font-family: $f-stack-secondary;
+            font-style: normal;
+
+            em {
+                color: $peach;
+                font-style: italic;
+            }
         }
     }
 }

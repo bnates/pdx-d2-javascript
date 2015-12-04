@@ -4,18 +4,30 @@ section[role="add-task"] {
 
 .tasks li {
     padding: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    .created {
+        display: block;
+        float: left;
+        margin-top: 15px;
+        margin-right: 30px;
+        color: #888;
+    }
 
     .item {
         display: block;
         float: left;
-        width: 76.5%;
+        width: 60%;
         margin-top: 15px;
+        color: $success-msg;
+        font-weight: bold;
     }
 }
 
 .completed-tasks li span.item {
     display: block;
-    width: 100%;
+    width: 96%;
     margin-bottom: 25px;
 }
 
@@ -28,12 +40,29 @@ section[role="add-task"] {
     padding-bottom: 3px;
     background: $btn-secondary;
     color: $white;
+    cursor: pointer;
     border-radius: 3px;
     margin-top: 12px;
+    transition: 350ms all;
+
+    &:hover {
+        background: $red;
+    }
 }
 
 .complete-all {
     margin-top: 25px;
+    margin-left: 0px;
     width: 50%;
-    float: right;
+}
+
+.status-bar {
+    background: $std-msg;
+    padding: 15px;
+    color: $body-bg;
+
+    .search-box {
+        width: 500px;
+        margin-bottom: 0px;
+    }
 }

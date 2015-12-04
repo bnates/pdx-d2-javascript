@@ -1,7 +1,13 @@
 .info-bar {
-    background: $btn-primary;
+    background: $success-msg;
     color: $white;
     text-align: center;
     padding: 10px;
-    font-size: 16px;
+    font-size: 14px;
+    font-family: 'PT Sans';
+    font-weight: 400;
+
+    &.active {
+        box-shadow: 0px 0px 4px 0px $black;
+    }
 }

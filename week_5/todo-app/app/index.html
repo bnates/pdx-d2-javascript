@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html ng-app="Todo">
 <head>
-    <title>Todo Application</title>
+    <title>Task Fellows</title>
     <link href='https://fonts.googleapis.com/css?family=Play|PT+Sans' rel='stylesheet' type='text/css'>
 </head>
 <body>
@@ -9,17 +9,17 @@
         <div class="inner">
             <img src="/assets/img/logo.png" alt="logo">
         </div>
-        <div class="info-bar">Task It!  The definitive task tool.</div>
+        <div class="info-bar">Task Fellows!  The definitive task tool.</div>
     </header>
 
     <main ng-controller="TaskCtrl">
         <section role="welcome">
-            <p class="msg">Task It! is the definitive task tool meant to keep your ever growing task list in check...  so that you can live a stress free life!</p>
+            <p class="msg">Use our simple interface to create new tasks, update old tasks, and <em>keep your life in balance.</em></p>
         </section>
 
         <section role="add-task">
             <form>
-                <input type="text" placeholder="Enter Task" ng-model="taskName" value="">
+                <input type="text" placeholder="Enter Task Description" ng-model="taskName" value="">
                 <button type="submit"><span>Add Task</span></button>
             </form>
         </section>
@@ -27,17 +27,13 @@
 
         <section class="current-tasks">
             <h3>Current Tasks </h3>
-            <br>
-            <label>Task: <input ng-model="search.description"></label> <br>
-            <div>
-                <!-- haha Brian :p -->
-                Status:
-                <br>
-                <label>all:<input type='radio' ng-model="search.done" ng-value='undefined'></label>
-                <label>done: <input type='radio' ng-model="search.done" value='true'></label>
-                <label>remaining: <input type='radio' ng-model="search.done" value='false'></label>
-            <br>
-            <br>
+            <!-- ☹ note to future dev's - had to remove a bunch of br tags from this section ☹ -->
+            <div class="status-bar">
+                <input type="text" class="search-box" placeholder="Search" ng-model="search.description">
+                <label>All: <input type='radio' ng-model="search.done" ng-value='undefined'></label>
+                <label>Done: <input type='radio' ng-model="search.done" value='true'></label>
+                <label>Remaining:<input type='radio' ng-model="search.done" value='false'></label>
+            </div>
             <ul class="tasks">
                 <li data-idx="{{ $index }}"
                     ng-repeat="task in tasks | filter:search">
@@ -60,6 +56,8 @@
             <button class="complete-all"><span>Remove All Completed Tasks</span></button>
         </section>
     </main>
+
+    <footer></footer>
 
     <script type="text/javascript" src="bundle.js"></script>
 

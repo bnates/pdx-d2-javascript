@@ -9,9 +9,17 @@ header {
 
         img {
             margin: 15px 0;
-            width: 85px;
+            width: 120px;
         }
     }
+}
+
+footer { /* dev only - content needed before styles */
+    float: left;
+    height: 150px;
+    width: 100%;
+    margin-top: 100px;
+    background: #444;
 }
 
 main {
