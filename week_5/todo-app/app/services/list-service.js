@@ -6,7 +6,7 @@ var local = [ '$q', function local($q) {
             var tasks = $q.defer();
             tasks.resolve([
                 {
-                    description: 'foo local task description - task 1',
+                    description: 'foo blah task description - task 1',
                     done: false,
                     created: new Date()
                 },
@@ -32,22 +32,5 @@ var server = [ '$http', function($http) {
     };
 }];
 
-
-
-var Todo = angular.module('todo.list-controller', []);
-
-Todo.factory( 'tasksService', local);
-Todo.controller('TaskCtrl', ['$scope', 'tasksService', TaskCtrl]);
-// Todo.controller('TaskCtrl', ['$scope', '$http', TaskCtrl]);
-
-function TaskCtrl($scope, tasksService) {
-    tasksService.get().then( function(tasks){
-        $scope.tasks = tasks;
-    });
-
-    $scope.search = {};
-    $scope.showSearch = function(){
-    	console.log($scope);
-    	$scope.search.$ = 'haha';
-    };
-}
+angular.module('todo.list-service', [])
+    .factory( 'listService', local);

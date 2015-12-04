@@ -1,0 +1,52 @@
+<div class="settings-sidebar"><img src="/assets/img/gear.png"></div>
+
+<section role="welcome">
+    <p class="msg">
+        Use our simple interface to create new tasks, update old tasks, and <em>keep your life in balance.</em>
+    </p>
+</section>
+
+<section role="add-task">
+    <form>
+        <input type="text" placeholder="Enter Task Description" ng-model="taskName" value="">
+        <button type="submit"><span>Add Task</span></button>
+    </form>
+</section>
+
+<section class="current-tasks">
+    <h3>Current Tasks </h3>
+    <!-- ☹ note to future dev's - had to remove a bunch of br tags from this section ☹ -->
+    <div class="status-bar">
+        <input type="text" class="search-box" placeholder="Search" ng-model="search.description">
+        <label>All:
+            <input type='radio' ng-model="search.done" ng-value='undefined'>
+        </label>
+        <label>Done:
+            <input type='radio' ng-model="search.done" ng-value='true'>
+        </label>
+        <label>Remaining:
+            <input type='radio' ng-model="search.done" ng-value='false'>
+        </label>
+    </div>
+
+    <ul class="tasks">
+        <li data-idx="{{ $index }}"
+            ng-repeat="task in tasks | filter:search">
+            <span class="item">{{ task.description }}</span>
+            <span class="created">{{ task.created | moment }}</span>
+            <span class="remove">X</span>
+            <button><span>Complete Task</span></button>
+        </li>
+    </ul>
+</section>
+
+<section class="completed-tasks">
+    <h3>Completed Tasks</h3>
+    <ul class="tasks">
+        <li ng-repeat="task in tasks | filter: { done: true }">
+            <span class="item">{{ task.description }}</span>
+            <span class="remove">X</span>
+        </li>
+    </ul>
+    <button class="complete-all"><span>Remove All Completed Tasks</span></button>
+</section>
