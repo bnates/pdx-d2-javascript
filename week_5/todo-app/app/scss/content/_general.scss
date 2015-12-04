@@ -11,3 +11,30 @@
         box-shadow: 0px 0px 4px 0px $black;
     }
 }
+
+.settings-sidebar {
+    position: fixed;
+    top: 140px;
+    left: 0px;
+    width: 25px;
+    cursor: pointer;
+    background-color: $btn-primary;
+    padding: 10px 10px 8px 5px;
+    border-radius: 0px 3px 3px 0px;
+    transition: 350ms all;
+
+    &:hover {
+        background-color: $btn-secondary;
+    }
+
+    img {
+        width: 100%;
+        transition: 350ms all;
+        opacity: .75;
+
+        &:hover {
+            transform: rotate(2000deg);
+            opacity: 1;
+        }
+    }
+}

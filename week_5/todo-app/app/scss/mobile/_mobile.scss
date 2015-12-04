@@ -10,6 +10,9 @@
             img {
                 margin: 15px 2.5%;
             }
+            .logo {
+                margin-left: 2.5%;
+            }
         }
     }
 
@@ -21,6 +24,11 @@
         margin: 0 2.5%;
     }
 
+    label {
+        margin-left: 10px;
+        font-size: 12px;
+    }
+
     input[type="text"] {
         width: 100%;
         box-sizing: border-box;
@@ -28,6 +36,11 @@
 
     .tasks li {
         padding: 0px;
+
+        .created {
+            margin-bottom: 15px;
+            margin-top: 0px;
+        }
 
         .item {
             width: 100%;
@@ -57,4 +70,17 @@
      .complete-all {
         width: 100%;
      }
+
+    header > .inner .mobile-icon {
+        display: block;
+        position: absolute;
+        right: 5px;
+        width: 23px;
+        top: 13px;
+     }
+
+     .settings-sidebar {
+        display: none;
+     }
+
 }

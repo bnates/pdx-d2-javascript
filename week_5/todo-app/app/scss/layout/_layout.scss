@@ -6,20 +6,48 @@ header {
     > .inner {
         max-width: $bp-large;
         margin: 0 auto;
+        position: relative;
 
-        img {
+        .logo {
             margin: 15px 0;
             width: 120px;
+        }
+
+        .mobile-icon {
+            display: none;
         }
     }
 }
 
-footer { /* dev only - content needed before styles */
+/* dev only - content needs to be added before this can be accurately styled */
+
+footer {
     float: left;
     height: 150px;
     width: 100%;
     margin-top: 100px;
-    background: #444;
+    background: $grey;
+
+    div {
+        max-width: $bp-large;
+        position: relative;
+        margin: 0 auto;
+        height: 150px;
+
+        span {
+            position: absolute;
+            bottom: 15px;
+            color: $body-bg;
+            font-size: 12px;
+        }
+
+        img {
+            position: absolute;
+            width: 30px;
+            bottom: 10px;
+            right: 0;
+        }
+    }
 }
 
 main {
