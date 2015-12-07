@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>v-f-s-p</title>
+
+	<style>
+		body {
+			font-family: sans-serif;
+		}
+	</style>
+</head>
+<body ng-app='app'>
+	<h1>Angular .value .factory .service .provider</h1>
+	<h2>Main</h2>
+	<ul ng-controller='MainCtrl as main'>
+		<li>{{main.foo}}</li>
+		<li>{{main.magicNumber}}</li>
+		<li>{{main.classname}}</li>
+		<li>{{main.students}}</li>
+		<li>
+			<h3>Service Items</h3>
+			<ul>
+				<li ng-repeat='letter in main.letters'>{{letter}}</li>
+			</ul>
+		</li>
+	</ul>
+
+
+	<h2>Second</h2>
+	<ul ng-controller='SecondCtrl as second'>
+		<li>{{second.students}}</li>
+	</ul>
+
+	<script type="text/javascript" src="bundle.js"></script>
+</body>
+</html>

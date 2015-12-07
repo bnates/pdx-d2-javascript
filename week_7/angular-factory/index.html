@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>factories</title>
+</head>
+<body ng-app='app'>
+
+	<h1>angular stuff for you peeps</h1>
+
+	<h2>Main</h2>
+	<section ng-controller='MainCtrl as main'>
+		<ul>
+			<li>{{main.foo}}</li>
+			<li>{{main.magicNumber}}</li>
+			<li>{{main.classname}}</li>
+			<li>{{main.students}}</li>
+			<li>{{main.letters}}</li>
+			<li>{{main.obj.name}}</li>
+		</ul>
+	</section>
+
+	<h2>Second</h2>
+	<section ng-controller='SecondCtrl as second'>
+		<ul>
+			<li>{{second.students}}</li>
+		</ul>
+	</section>
+
+	<script src='bundle.js'></script>
+</body>
+</html>
