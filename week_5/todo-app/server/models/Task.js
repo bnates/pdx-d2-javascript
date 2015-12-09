@@ -1,9 +1,9 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
-var Todo = new Schema({
+var Task = new Schema({
 	description: String,
-	done: String
+	done: Boolean
 }, { timestamps: true } );
 
-module.exports = mongoose.model('Todo', Todo);
+module.exports = mongoose.model('Task', Task);

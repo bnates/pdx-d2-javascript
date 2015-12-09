@@ -1,0 +1,28 @@
+<div class="settings-sidebar"><img src="/assets/img/gear.png"></div>
+
+<section role="welcome">
+    <p class="msg">
+        Use our simple interface to create new tasks, update old tasks, and <em>keep your life in balance.</em>
+    </p>
+</section>
+
+<section role="add-task">
+    <form ng-submit="add()">
+        <input type="text" placeholder="Enter Task Description" ng-model="taskName" value="">
+        <button type="submit"><span>Add Task</span></button>
+    </form>
+</section>
+
+<section class="current-tasks">
+    <h3>Current Tasks</h3>
+    <search-box search='search'></search-box>
+    <task-list tasks='tasks' filter='search'></task-list>
+</section>
+
+<section class="completed-tasks">
+    <h3>Completed Tasks</h3>
+    <task-list tasks='tasks' filter='{ done: true }'></task-list>
+    <button ng-click='removeCompleted()' class="complete-all">
+        <span>Remove All Completed Tasks</span>
+    </button>
+</section>

@@ -1,0 +1,10 @@
+<ul class="tasks">
+    <li ng-repeat="task in tasks | filter:filter">
+	    <span class="item">{{ task.description }}</span>
+	    <span class="created">{{ task.createdAt | moment }}</span>
+	    <span ng-click="remove(task)" class="remove">X</span>
+	    <button ng-if="!task.done" ng-click="complete(task)">
+	    	<span>Complete Task</span>
+	    </button>
+	</li>
+</ul>
