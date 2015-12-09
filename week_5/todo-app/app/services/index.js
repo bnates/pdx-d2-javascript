@@ -4,7 +4,7 @@ var env = require('../env');
 
 // also see http://kirkbushell.me/angular-js-using-ng-resource-in-a-more-restful-manner/
 
-module.exports = angular.module('services', [ $resource, env ] )
+module.exports = angular.module('services', [ env, $resource ] )
     .factory( 'Task', function ( API, $resource ){
 
         return $resource(API.hostUrl + 'Tasks/:id', { id: '@_id' }, {

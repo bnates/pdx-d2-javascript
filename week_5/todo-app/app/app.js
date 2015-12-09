@@ -1,5 +1,4 @@
 var angular = require('angular');
-
 require('./style.scss');
 
 var Todo = angular.module('TodoApp', [
@@ -9,5 +8,5 @@ var Todo = angular.module('TodoApp', [
 ])
 
 .config(['$routeProvider', function($routeProvider) {
-	$routeProvider.otherwise({redirectTo: '/todos'});
+	$routeProvider.otherwise({ redirectTo: '/todo' });
 }]);

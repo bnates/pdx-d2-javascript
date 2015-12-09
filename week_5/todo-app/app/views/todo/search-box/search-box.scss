@@ -1,0 +1,20 @@
+@import '_vars';
+
+.status-bar {
+    background: $std-msg;
+    padding: 15px;
+    color: $body-bg;
+
+    .search-box {
+        width: 500px;
+        margin-bottom: 0px;
+    }
+
+    .statuses {
+        margin-top: 10px;
+    }
+
+    .status {
+        display: inline-block;
+    }
+}

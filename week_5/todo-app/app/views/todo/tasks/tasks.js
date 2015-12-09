@@ -1,9 +1,16 @@
 var angular = require('angular');
+var moment = require('moment');
 
-module.exports = angular.module('todo.task-list', [])
-	.directive('taskList', [function() {
+module.exports = angular.module('components.tasks', [])
+	.filter('moment', function() {
+	  return function(date) {
+	    return moment(date).fromNow();
+	  };
+	})
+	.directive('tasks', [function() {
 		return {
-			templateUrl : 'views/todo/task-list.html',
+			restrict: 'E',
+			template: require('./tasks.html'),
 			scope: {
 				tasks: '=',
 				filter: '='

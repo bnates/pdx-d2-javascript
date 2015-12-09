@@ -1,18 +1,20 @@
-var angular = require('angular'),
-	$router = require('angular-route'),
-    searchBox = require('./search-box'),
-    taskList = require('./task-list');
+var angular = require('angular');
 
-module.exports = angular.module('todo', [$router, searchBox, taskList])
+module.exports = angular.module('view.todo', [
+        require('angular-route'),
+        require('./tasks/tasks'),
+        require('./search-box/search-box')
+    ])
 
 	.config(['$routeProvider', function($router) {
-	  $router.when('/todos', {
-	    templateUrl: 'views/todo/todo.html',
+	  $router.when('/todo', {
+	    template: require('./todo.html'),
 	    controller: 'TodoCtrl'
 	  });
 	}])
 
 	.controller('TodoCtrl', ['$scope', 'Task', TodoCtrl])
+
     .name;
 
 
@@ -24,9 +26,6 @@ function TodoCtrl($scope, Task) {
         todo.$save().then(function(todo){
             $scope.tasks.push(todo);
             $scope.taskName = '';
-        },
-        function(err){
-            alert( 'add task failed!' );
         });
 
     }
