@@ -23,7 +23,14 @@ app.use(express.static(__dirname + '/public'));
 mongoose.connect('mongodb://localhost/todoapp');
 
 var Todo = require('./models/Todo');
-restify.serve(router, Todo);
+var uri = restify.serve(router, Todo);
+
+router.delete(uri + '/0/completed', function (req, res, next) {
+	Todo.remove({done: true}).then(function(removed){
+		res.json({ removed: removed.result.n });
+	});
+})
+
 app.use(router);
 
 app.get('/', function (req, res) {

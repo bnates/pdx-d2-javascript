@@ -55,4 +55,16 @@ function ListCtrl($scope, Todo) {
             alert( 'remove task failed!' );
         });
     }
+
+    $scope.removeCompleted = function(){
+        Todo.removeCompleted().$promise.then(function(response){
+            $scope.tasks = $scope.tasks.filter(function(task){
+                return task.done !== true;
+            });
+        },
+        function(err){
+            alert( 'remove completed failed!' );
+        });
+    }
+
 }
