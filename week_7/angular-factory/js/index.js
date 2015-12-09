@@ -51,7 +51,7 @@ var name = angular.module('app', [])
 		};
 	})
 
-	.controller('MainCtrl', [
+	.controller('mainctrl', [
 		'MAGIC_NUMBER',
 		'classname',
 		'students',

@@ -4,8 +4,7 @@
   "description": "simple todo application",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "nodemon --exec './node_modules/.bin/nf start'"
   },
   "keywords": [
     "todo",
@@ -14,13 +13,19 @@
   "author": "Brian Nations",
   "license": "MIT",
   "dependencies": {
+    "body-parser": "^1.14.1",
     "express": "^4.13.3",
-    "mongoose": "^4.2.7"
+    "express-restify-mongoose": "^2.3.1",
+    "method-override": "^2.3.5",
+    "mongodb": "^2.1.0",
+    "mongoose": "^4.2.10"
   },
   "devDependencies": {
     "chai": "^3.4.1",
     "chai-http": "^1.0.0",
+    "foreman": "^1.4.1",
     "mocha": "^2.3.4",
-    "morgan": "^1.6.1"
+    "morgan": "^1.6.1",
+    "nf": "0.0.3"
   }
 }

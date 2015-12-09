@@ -7,7 +7,7 @@
 </section>
 
 <section role="add-task">
-    <form>
+    <form ng-submit="add()">
         <input type="text" placeholder="Enter Task Description" ng-model="taskName" value="">
         <button type="submit"><span>Add Task</span></button>
     </form>
@@ -16,15 +16,17 @@
 <section class="current-tasks">
     <h3>Current Tasks </h3>
     <!-- ☹ note to future dev's - had to remove a bunch of br tags from this section ☹ -->
-    <div class="status-bar">
-        <input type="text" class="search-box" placeholder="Search" ng-model="search.description">
-
-        <ul ng-init="statuses = {
+    <div class="status-bar" ng-init="search = { done: false }">
+        <div>
+            <input type="text" class="search-box" placeholder="Search" ng-model="search.description">
+        </div>
+        <ul class="statuses"
+            ng-init="statuses = {
                 All: undefined,
                 Done: true,
                 Remaining: false
             }">
-        <li ng-repeat="( label, value ) in statuses">
+        <li class="status" ng-repeat="( label, value ) in statuses">
         <label ng-class="{ selected: value === search.done }">{{label}}:
             <input type='radio' ng-model="search.done" ng-value='value'>
         </label>
@@ -33,12 +35,11 @@
     </div>
 
     <ul class="tasks">
-        <li data-idx="{{ $index }}"
-            ng-repeat="task in tasks | filter:search">
+        <li ng-repeat="task in tasks | filter:search">
             <span class="item">{{ task.description }}</span>
-            <span class="created">{{ task.created | moment }}</span>
-            <span class="remove">X</span>
-            <button><span>Complete Task</span></button>
+            <span class="created">{{ task.createdAt | moment }}</span>
+            <span ng-click="remove(task)" class="remove">X</span>
+            <button ng-click="complete(task)"><span>Complete Task</span></button>
         </li>
     </ul>
 </section>

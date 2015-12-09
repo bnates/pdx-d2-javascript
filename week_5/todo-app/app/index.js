@@ -1,14 +1,17 @@
 var angular = require('angular');
-require('./services/list-service');
-require('./views/list-view/list-view');
+require('./services/TodoService');
+require('./views/todo-list');
 require('./filters/moment');
 
 require('./style.scss');
 
 var Todo = angular.module('Todo', [
-	'todo.list-service',
-	'todo.list-view',
+	require('angular-resource'),
+	'todo.services',
+	'todo.todo-list',
 	'todo.moment-filter'
-]).config(['$routeProvider', function($routeProvider) {
-	$routeProvider.otherwise({redirectTo: '/list-view'});
+])
+
+.config(['$routeProvider', function($routeProvider) {
+	$routeProvider.otherwise({redirectTo: '/todos'});
 }]);
