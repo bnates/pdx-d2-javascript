@@ -15,6 +15,10 @@ module.exports = {
         // ],
         loaders: [
             {
+                test: /\.html$/,
+                loader: 'html'
+            },
+            {
                 test: /\.scss$/,
                 loader: 'style!css?sourceMap!sass?sourceMap'
             }

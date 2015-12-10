@@ -8,7 +8,7 @@ angular.module('todo.list-view', [
     ])
 	.config(['$routeProvider', function($router) {
 	  $router.when('/list-view', {
-	    templateUrl: 'views/list-view/list-view.html',
+	    template: require('./list-view.html'),
 	    controller: 'ListCtrl'
 	  });
 	}])
