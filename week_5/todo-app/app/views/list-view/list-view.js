@@ -1,7 +1,11 @@
 var angular = require('angular'),
-	$router = require('angular-route');
+	$router = require('angular-route'),
+    searchBox = require('../components/search-box');
 
-angular.module('todo.list-view', [$router])
+angular.module('todo.list-view', [
+        $router,
+        searchBox,
+    ])
 	.config(['$routeProvider', function($router) {
 	  $router.when('/list-view', {
 	    templateUrl: 'views/list-view/list-view.html',
