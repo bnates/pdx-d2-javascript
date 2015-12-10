@@ -1,6 +1,6 @@
 var angular = require('angular'),
 	$router = require('angular-route'),
-    searchBox = require('../components/search-box');
+    searchBox = require('../components/search-box/search-box');
 
 angular.module('todo.list-view', [
         $router,
