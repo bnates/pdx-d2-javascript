@@ -14,29 +14,14 @@
 </section>
 
 <section class="current-tasks">
-    <h3>Current Tasks </h3>
-    <!-- ☹ note to future dev's - had to remove a bunch of br tags from this section ☹ -->
+    <h3>Current Tasks</h3>
     <search-box search='filter'></search-box>
-
-    <ul class="tasks">
-        <li data-idx="{{ $index }}"
-            ng-repeat="task in tasks | filter:filter">
-            <span class="item">{{ task.description }}</span>
-            <span class="created">{{ task.created | moment }}</span>
-            <span ng-click='remove(task)' class="remove">X</span>
-            <button ng-click='markDone(task)'><span>Complete Task</span></button>
-        </li>
-    </ul>
+    <tasks tasks='tasks' filter='filter'></tasks>
 </section>
 
 <section class="completed-tasks">
     <h3>Completed Tasks</h3>
-    <ul class="tasks">
-        <li ng-repeat="task in tasks | filter: { done: true }">
-            <span class="item">{{ task.description }}</span>
-            <span class="remove">X</span>
-        </li>
-    </ul>
+    <tasks tasks='tasks' filter='{ done: true }'></tasks>
     <button class="complete-all" ng-click='removeCompleted()'>
         <span>Remove All Completed Tasks</span>
     </button>

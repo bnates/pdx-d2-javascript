@@ -13,9 +13,11 @@
         }">
 
         <li ng-repeat="( label, value ) in statuses">
+
             <label ng-class="{ selected: value === search.done }">
                 {{label}}:<input type='radio' ng-model="search.done" ng-value='value'>
             </label>
+
         </li>
     </ul>
 </div>
