@@ -1,6 +1,10 @@
 var angular = require('angular');
+var $animate = require('angular-animate');
+require('./tasks.scss');
 
-module.exports = angular.module('components.tasks', [])
+module.exports = angular.module('components.tasks', [
+		$animate
+	])
 	.directive('tasks', function(){
 		return {
 			restrict: 'E',
