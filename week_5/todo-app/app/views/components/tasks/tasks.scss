@@ -1,23 +1,18 @@
-.task {
-  line-height:40px;
-}
 
 .task.ng-move,
 .task.ng-enter,
 .task.ng-leave {
-  transition:all linear 0.5s;
+  transition:all ease-in-out 300ms;
 }
 
 .task.ng-leave.ng-leave-active,
 .task.ng-move,
 .task.ng-enter {
   opacity:0;
-  max-height:0;
 }
 
 .task.ng-leave,
 .task.ng-move.ng-move-active,
 .task.ng-enter.ng-enter-active {
   opacity:1;
-  max-height:40px;
 }
